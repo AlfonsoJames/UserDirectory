@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar"
+// import './App.css';
+import Footer from "./components/Footer";
+import Container from "./components/Container";
+import Wrapper from "./components/Wrapper";
+import Row from "./components/Row"
+import SearchForm from "./components/SearchForm"
+// import SearchResults from "./components/SearchResults";
+// import getRandomEmployees from "./utils/API.js"
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Container>
+      <main>
+      <Wrapper>
+       
+          {/* <SearchResults /> */}
+       
+      </Wrapper>
+      </main>
+      <Row><SearchForm></SearchForm></Row>
+      </Container>
+      <Footer />
     </div>
   );
 }
+
+
+
 
 export default App;
