@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-// import './App.css';
+import './App.css';
 import Footer from "./components/Footer";
 import Container from "./components/Container";
 import Wrapper from "./components/Wrapper";
